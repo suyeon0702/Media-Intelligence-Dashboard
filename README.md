@@ -25,18 +25,21 @@
 
 ## 🏗 시스템 아키텍처
 
-[수집]
-네이버 뉴스 API + 연합뉴스 RSS
-↓ APScheduler (30분 간격)
-[백엔드 - FastAPI]
-수집 파이프라인 → SQLite 저장
-↓
+[수집]<br>
+네이버 뉴스 API + 연합뉴스 RSS<br>
+↓ <br>
+APScheduler (30분 간격)<br>
+<br>
+[백엔드 - FastAPI]<br>
+수집 파이프라인 → SQLite 저장<br>
+↓<br>
 이슈 클러스터링 → Gemini 2.5 Flash API 호출
-(논조 분석 / 요약 브리핑 / 기사 초안)
-↓
-REST API → 프론트엔드 제공
-[프론트엔드 - React + Vite]
-메인 대시보드 → 이슈 상세 → 기사 초안 드래프팅
+(논조 분석 / 요약 브리핑 / 기사 초안)<br>
+↓<br>
+REST API → 프론트엔드 제공<br>
+<br>
+[프론트엔드 - React + Vite]<br>
+메인 대시보드 → 이슈 상세 → 기사 초안 드래프팅<br>
 
 ---
 
